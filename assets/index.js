@@ -41,3 +41,16 @@ taskForm.addEventListener('submit', e => {
         taskInput.value = '';
     }
 });
+
+function toggleComplete(index) {
+    tasks[index].completed = !tasks[index].completed;
+    saveTasks();
+    renderTasks(searchInput.value);
+}
+
+
+function deleteTask(index) {
+    tasks.splice(index, 1);
+    saveTasks();
+    renderTasks(searchInput.value);
+}
