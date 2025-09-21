@@ -30,3 +30,14 @@ function renderTasks(filter = '') {
             taskList.appendChild(li);
         });
 }
+taskForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const text = taskInput.value.trim();
+    const priority = taskPriority.value;
+    if (text) {
+        tasks.push({ text, completed: false, priority });
+        saveTasks();
+        renderTasks();
+        taskInput.value = '';
+    }
+});
