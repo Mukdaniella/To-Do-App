@@ -54,3 +54,12 @@ function deleteTask(index) {
     saveTasks();
     renderTasks(searchInput.value);
 }
+
+function editTask(index) {
+    const newText = prompt("Edit task:", tasks[index].text);
+    if (newText !== null && newText.trim() !== "") {
+        tasks[index].text = newText.trim();
+        saveTasks();
+        renderTasks(searchInput.value);
+    }
+}
