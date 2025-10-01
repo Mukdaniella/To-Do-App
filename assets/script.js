@@ -64,15 +64,14 @@ function editTask(index) {
     }
 }
 
-// Dark mode toggle
+
 darkToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark');
 });
 
-// Search tasks
+
 searchInput.addEventListener('input', () => {
     renderTasks(searchInput.value);
 });
 
-// Initial render
 renderTasks();
