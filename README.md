@@ -29,7 +29,7 @@ All tasks are stored in **LocalStorage**, so they persist even after refreshing 
 - **JavaScript (ES6)**  
 - **LocalStorage API**  
 
----
 
-## 📂 Folder Structure  
+
+
 
